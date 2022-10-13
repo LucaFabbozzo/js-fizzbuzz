@@ -14,15 +14,27 @@
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
 
+const container = document.querySelector('.lf-container');
 
-for(let i = 1; i <= 100; i++) {
-  if(!(i % 15)) {
-    console.log('FizzBuzz');
-  } else if(!(i % 5)) {
-    console.log('Buzz');
-  } else if(!(i % 3)) {
-    console.log('Fizz');
-  } else {
-    console.log(i);
-  }
+const limit = 100;
+
+
+for(let i = 1; i <= limit; i++) {
+  // creo un box
+  const box = document.createElement('div');
+  // aggiungo la classe
+  box.className = 'box';
+
+  // if(!(i % 15)) {
+  //   console.log('FizzBuzz');
+  // } else if(!(i % 5)) {
+  //   console.log('Buzz');
+  // } else if(!(i % 3)) {
+  //   console.log('Fizz');
+  // } else {
+  //   console.log(i);
+  // }
+
+  box.innerHTML = i;
+  container.append(box);
 }

@@ -1,0 +1,42 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #093A4D;
+}
+
+h1 {
+  color: #f0f3f5;
+  font-size: 3.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.lf-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.azure {
+  background-color: #1389B2;
+}
+
+.green {
+  background-color: #0AD6A1;
+}
+
+.yellow {
+  background-color: #FFD066;
+}
