@@ -15,18 +15,15 @@
 
 
 
-// stampare numeri da 1 a 100
-
 for(let i = 1; i <= 100; i++) {
   if(!(i % 3)) {
     console.log('Fizz');
   } else if (!(i % 5)){
     console.log('Buzz');
+  } else if (!(i % 15)) {
+    console.log('FizzBuzz');
   } else {
     console.log(i);
   }
 }
 
-
-
-// Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
