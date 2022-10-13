@@ -18,23 +18,23 @@ const container = document.querySelector('.lf-container');
 
 const limit = 100;
 
-
 for(let i = 1; i <= limit; i++) {
   // creo un box
   const box = document.createElement('div');
   // aggiungo la classe
   box.className = 'box';
 
-  // if(!(i % 15)) {
-  //   console.log('FizzBuzz');
-  // } else if(!(i % 5)) {
-  //   console.log('Buzz');
-  // } else if(!(i % 3)) {
-  //   console.log('Fizz');
-  // } else {
-  //   console.log(i);
-  // }
+  if(!(i % 15)) {
+    box.classList.add('red');
+  } else if(!(i % 5)) {
+    box.classList.add('yellow');
+  } else if(!(i % 3)) {
+    box.classList.add('green');
+  } else {
+    box.classList.add('azure');
+  }
 
   box.innerHTML = i;
+  
   container.append(box);
 }
